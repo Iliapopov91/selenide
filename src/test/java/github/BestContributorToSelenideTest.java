@@ -31,6 +31,6 @@ public class BestContributorToSelenideTest {
         open("/selenide/selenide");
 
         //Навести курсор на первого контрибьютера
-        //Проверка всплывающего окна на содержание текста Andrey Solntsev
+        //Проверка окна на содержание текста Andrey Solntsev
     }
 }
