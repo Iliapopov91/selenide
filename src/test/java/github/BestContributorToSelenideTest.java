@@ -25,9 +25,12 @@ public class BestContributorToSelenideTest {
     }
 
     @Test
-    public void selenideBestContributor() {
+    public void andreySolntsevTheFirstContributer() {
 
         //Открыть Selenide
         open("/selenide/selenide");
+
+        //Навести курсор на первого контрибьютера
+        //Проверка всплывающего окна на содержание текста Andrey Solntsev
     }
 }
