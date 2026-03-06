@@ -34,11 +34,8 @@ public class SelenideRepositoriesSearchTest {
         open("https://github.com/");
 
         //ввести в поиск selenide
-           $(".search-input").click();
+        $(".search-input").click();
         $("#query-builder-test").setValue("selenide").pressEnter();
-
-        // Дождаться загрузки результатов
-       // $("[data-testid='results-list']").shouldBe(visible);
 
         // Кликнуть на первый результат
         $$("[data-testid='results-list'] .search-title a")
