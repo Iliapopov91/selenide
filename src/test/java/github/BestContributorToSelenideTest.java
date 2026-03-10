@@ -2,7 +2,6 @@ package github;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selectors;
-import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -38,7 +37,6 @@ public class BestContributorToSelenideTest {
         $("div.prc-PageLayout-Pane-AyzHK").$(Selectors.byText("Contributors"))
                 .closest(".BorderGrid-cell").$$("ul li").first().hover();
 
-        Selenide.sleep(5000);
         //Проверка окна на содержание текста Andrey Solntsev
         $("a.Link--secondary.no-underline.ml-1").shouldHave(text("Andrei Solntsev"));
 
