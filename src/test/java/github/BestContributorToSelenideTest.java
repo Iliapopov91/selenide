@@ -6,6 +6,7 @@ import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -39,6 +40,7 @@ public class BestContributorToSelenideTest {
 
         Selenide.sleep(5000);
         //Проверка окна на содержание текста Andrey Solntsev
+        $("a.Link--secondary.no-underline.ml-1").shouldHave(text("Andrei Solntsev"));
 
     }
 }
